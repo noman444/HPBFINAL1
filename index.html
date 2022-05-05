@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nukiyaverse</title>
+    <meta name="title" content="Nukiyaverse NFT" />
+    <meta name="description" content="Nukiyaverse NFTs are a collection of 10,000 programmatically generative rabbits with over 500+ different traits. Each character is stored as ERC721 tokens on the Ethereum blockchain" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://etherbunny.io/" />
+    <meta property="og:title" content="Nukiyaverse NFT" />
+    <meta property="og:description" content="Nukiyaverse NFTs are a collection of 10,000 programmatically generative rabbits with over 500+ different traits. Each character is stored as ERC721 tokens on the Ethereum blockchain" />
+    <meta property="og:image" content="https://etherbunny.io/img/cover.jpeg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://etherbunny.io/" />
+    <meta property="twitter:title" content="Nukiyaverse NFT" />
+    <meta property="twitter:description" content="Nukiyaverse NFTs are a collection of 10,000 programmatically generative rabbits with over 500+ different traits. Each character is stored as ERC721 tokens on the Ethereum blockchain" />
+    <meta property="twitter:image" content="img/fav.png" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/fav.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="img/fav.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/fav.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/fav.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/fav.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/fav.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/fav.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/fav.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="img/fav.png" />
+
+
+    <!-- SLICK-LINE-8 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- AOS ANIAMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.27042202.css">
+</head>
+
+<body>
+    <!-- NAVBAR-SECTION -->
+    <nav class="bg-light-green" id="">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between py-10">
+                <div>
+                    <img class="cursor-pointer" src="img/footer-logo (1).png" alt="logo" />
+                </div>
+                <ul class="hidden list-none lg:flex">
+                    <li class="flex flex-col justify-center">
+                        <a class="text-xl after:content-[''] after:block inline-block hover:after:w-full after:w-0 after:h-[2px] after:bg-white after:rounded-md after:duration-500 text-white xl:px-3 px-2" href="#about">
+              About
+            </a>
+                    </li>
+                    <li class="flex flex-col justify-center">
+                        <a class="text-xl after:content-[''] after:block inline-block hover:after:w-full after:w-0 after:h-[2px] after:bg-white after:rounded-md after:duration-500 text-white xl:px-3 px-2" href="#gallery">
+              Gallery
+            </a>
+                    </li>
+                    <li class="flex flex-col justify-center">
+                        <a class="text-xl after:content-[''] after:block inline-block hover:after:w-full after:w-0 after:h-[2px] after:bg-white after:rounded-md after:duration-500 text-white xl:px-3 px-2" href="#minting">
+              Mint
+            </a>
+                    </li>
+                    <li class="flex flex-col justify-center">
+                        <a class="text-xl after:content-[''] after:block inline-block hover:after:w-full after:w-0 after:h-[2px] after:bg-white after:rounded-md after:duration-500 text-white xl:px-3 px-2" href="#team">
+              Team
+            </a>
+
+
+                        <li class="flex flex-col justify-center">
+                            <a class="text-xl after:content-[''] after:block inline-block hover:after:w-full after:w-0 after:h-[2px] after:bg-white after:rounded-md after:duration-500 text-white xl:px-3 px-2" href="#faq">
+              FAQ
+            </a>
+                        </li>
+                        <li class="flex flex-col justify-center">
+                            <a class="text-xl after:content-[''] after:block inline-block hover:after:w-full after:w-0 after:h-[2px] after:bg-white after:rounded-md after:duration-500 text-white xl:px-3 px-2" href="#roadmap">
+              Roadmap
+            </a>
+                        </li>
+                </ul>
+                <div class="hidden sm:block">
+                    <button id="wallet-connect" class="px-5 py-3 text-xl text-white rounded-full connect-wallet bg-pinkk ff-comic hover:bg-transparent whitespace-nowrap">
+            connect Wallet
+          </button>
+
+                    <div id="wallet-address" class="flex justify-center hidden px-2 py-1 my-2 text-lg text-white rounded-2xl bg-pinkk item-center whitespace-nowrap">
+                    </div>
+                </div>
+                <div onclick="onclickNavOpens()" class="cursor-pointer group lg:hidden">
+                    <span class="block w-10 h-1 text-white bg-white rounded"></span>
+                    <span class="block w-6 h-1 my-2 text-white duration-500 bg-white rounded group-hover:w-10 group-hover:duration-500"></span>
+                    <span class="block w-10 h-1 text-black bg-white rounded"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="justify-center hidden mt-5 lg:flex bg-light-green sm:mt-0">
+        <a target="_blank" class="px-2" href="https://twitter.com/nyukiaverse" title="Nyukiaverse NFT Twitter">
+            <svg class="transition-all hover:scale-110" width="52" height="52" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="39.7333" height="39.7333" rx="19.8667" fill="none" />
+        <g clip-path="url(#clip0_165_4987)">
+          <path
+            d="M34.3222 11.0976C33.2854 11.557 32.1716 11.8674 31.0007 12.0077C32.2089 11.2848 33.1127 10.147 33.5437 8.80668C32.4086 9.4809 31.1663 9.95547 29.8708 10.2098C28.9996 9.27959 27.8457 8.66305 26.5883 8.45588C25.3308 8.24871 24.0401 8.46248 22.9165 9.06402C21.793 9.66556 20.8995 10.6212 20.3747 11.7826C19.85 12.944 19.7233 14.2461 20.0145 15.4868C17.7145 15.3714 15.4645 14.7736 13.4106 13.7323C11.3566 12.6909 9.54453 11.2294 8.09198 9.44242C7.59531 10.2992 7.30973 11.2925 7.30973 12.3504C7.30918 13.3028 7.5437 14.2405 7.9925 15.0805C8.44129 15.9205 9.09048 16.6367 9.88246 17.1656C8.96397 17.1364 8.06575 16.8882 7.26255 16.4417V16.5162C7.26246 17.8519 7.72449 19.1465 8.57025 20.1803C9.41601 21.2142 10.5934 21.9236 11.9027 22.1881C11.0506 22.4187 10.1573 22.4527 9.29019 22.2875C9.65958 23.4368 10.3791 24.4418 11.3481 25.1618C12.317 25.8819 13.4869 26.2809 14.6939 26.303C12.645 27.9115 10.1145 28.784 7.50964 28.7801C7.04821 28.7803 6.58718 28.7533 6.12891 28.6994C8.77301 30.3995 11.8509 31.3017 14.9944 31.2982C25.6355 31.2982 31.4527 22.4849 31.4527 14.8412C31.4527 14.5928 31.4465 14.342 31.4353 14.0937C32.5668 13.2754 33.5436 12.2621 34.3197 11.1013L34.3222 11.0976Z"
+            fill="white" />
+          c
+        </g>
+        <defs>
+          <clipPath id="clip0_165_4987">
+            <rect width="29.8" height="29.8" fill="white" transform="translate(4.96582 4.9668)" />
+          </clipPath>
+        </defs>
+      </svg>
+        </a>
+        <a target="_blank" class="px-2" href="https://discord.com/channels/910907986900316230/940217771797667890" title="Nukiyaverse NFT Discord">
+            <svg class="transition-all hover:scale-110" width="53" height="52" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.633789" width="39.7333" height="39.7333" rx="19.8667" fill="none" />
+        <g clip-path="url(#clip0_165_4992)">
+          <path
+            d="M30.8281 10.5442C28.9284 9.68743 26.892 9.05418 24.7626 8.69409C24.7436 8.69045 24.724 8.6928 24.7064 8.70081C24.6888 8.70882 24.6742 8.72209 24.6645 8.73879C24.4037 9.19697 24.1132 9.79421 23.9096 10.266C21.6511 9.9286 19.355 9.9286 17.0965 10.266C16.8697 9.74313 16.614 9.23325 16.3304 8.73879C16.3208 8.72188 16.3063 8.70831 16.2887 8.69988C16.2712 8.69145 16.2515 8.68856 16.2323 8.69161C14.1041 9.05169 12.0678 9.68494 10.1668 10.5429C10.1504 10.5498 10.1366 10.5615 10.1271 10.5765C6.26299 16.2571 5.20385 21.7974 5.72411 27.2682C5.72556 27.2816 5.72971 27.2945 5.73633 27.3063C5.74295 27.318 5.75189 27.3283 5.7626 27.3365C8.01795 28.9785 10.5335 30.2293 13.2039 31.0366C13.2225 31.0424 13.2424 31.0424 13.261 31.0366C13.2796 31.0308 13.2961 31.0196 13.3082 31.0044C13.8828 30.2359 14.3921 29.4205 14.8305 28.567C14.8366 28.5553 14.8401 28.5425 14.8408 28.5293C14.8415 28.5162 14.8393 28.503 14.8345 28.4908C14.8297 28.4785 14.8223 28.4675 14.8128 28.4583C14.8033 28.4492 14.792 28.4422 14.7796 28.4378C13.9775 28.1358 13.2003 27.7713 12.4552 27.3476C12.4418 27.34 12.4305 27.3292 12.4223 27.3161C12.4142 27.303 12.4094 27.2881 12.4084 27.2727C12.4074 27.2573 12.4103 27.2419 12.4167 27.2279C12.4231 27.2139 12.4329 27.2017 12.4452 27.1924C12.6017 27.077 12.7581 26.9565 12.9071 26.8361C12.9206 26.8253 12.9367 26.8184 12.9538 26.8162C12.9709 26.814 12.9883 26.8166 13.004 26.8237C17.88 29.014 23.1608 29.014 27.9797 26.8237C27.9955 26.8161 28.013 26.8132 28.0304 26.8152C28.0477 26.8172 28.0642 26.824 28.0778 26.8348C28.2268 26.9565 28.382 27.077 28.5397 27.1924C28.5522 27.2015 28.5621 27.2136 28.5688 27.2275C28.5754 27.2414 28.5785 27.2567 28.5777 27.272C28.577 27.2874 28.5725 27.3024 28.5645 27.3156C28.5566 27.3288 28.5455 27.3398 28.5323 27.3476C27.7898 27.7748 27.0174 28.1361 26.2066 28.4366C26.1942 28.4411 26.1828 28.4482 26.1734 28.4575C26.1639 28.4667 26.1565 28.4779 26.1517 28.4903C26.1469 28.5026 26.1447 28.5158 26.1454 28.529C26.1461 28.5423 26.1496 28.5552 26.1557 28.567C26.6027 29.42 27.1143 30.232 27.6768 31.0031C27.6885 31.0189 27.7048 31.0308 27.7234 31.037C27.7421 31.0432 27.7622 31.0435 27.7811 31.0379C30.4561 30.2328 32.9757 28.9814 35.2336 27.3365C35.2446 27.3288 35.2538 27.3188 35.2607 27.3072C35.2675 27.2957 35.2718 27.2828 35.2733 27.2694C35.8941 20.9444 34.2328 15.4488 30.8666 10.5789C30.8584 10.5631 30.8447 10.5508 30.8281 10.5442ZM15.5594 23.9368C14.0917 23.9368 12.8811 22.6094 12.8811 20.9816C12.8811 19.3526 14.0681 18.0265 15.5594 18.0265C17.0618 18.0265 18.2612 19.3637 18.2376 20.9816C18.2376 22.6107 17.0506 23.9368 15.5594 23.9368ZM25.4616 23.9368C23.9928 23.9368 22.7834 22.6094 22.7834 20.9816C22.7834 19.3526 23.9692 18.0265 25.4616 18.0265C26.9641 18.0265 28.1635 19.3637 28.1399 20.9816C28.1399 22.6107 26.9653 23.9368 25.4616 23.9368Z"
+            fill="white" />
+        </g>
+        <defs>
+          <clipPath id="clip0_165_4992">
+            <rect width="29.8" height="29.8" fill="white" transform="translate(5.60059 4.9668)" />
+          </clipPath>
+        </defs>
+      </svg>
+        </a>
+        <a target="_blank" class="px-2" href="https://www.instagram.com/nyukiaverse/" title="Nukiyaverse NFT Instagram">
+            <svg class="transition-all hover:scale-110" width="52" height="52" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.266602" width="39.7333" height="39.7333" rx="19.8667" fill="none" />
+        <path
+          d="M31.243 15.2786C31.2305 14.3382 31.0544 13.4071 30.7227 12.5271C30.4351 11.7847 29.9958 11.1106 29.4329 10.5476C28.8699 9.98471 28.1958 9.54539 27.4534 9.25776C26.5847 8.93165 25.6669 8.75531 24.7391 8.73626C23.5447 8.68287 23.166 8.66797 20.1338 8.66797C17.1017 8.66797 16.713 8.66797 15.5272 8.73626C14.5999 8.75545 13.6825 8.93178 12.8142 9.25776C12.0717 9.54519 11.3975 9.98444 10.8345 10.5474C10.2715 11.1104 9.8323 11.7846 9.54487 12.5271C9.2181 13.3952 9.04215 14.3127 9.02461 15.2401C8.97122 16.4358 8.95508 16.8145 8.95508 19.8467C8.95508 22.8788 8.95508 23.2662 9.02461 24.4533C9.04324 25.382 9.21831 26.2984 9.54487 27.1688C9.83278 27.911 10.2724 28.585 10.8355 29.1477C11.3986 29.7105 12.073 30.1495 12.8154 30.4369C13.6814 30.7761 14.5989 30.965 15.5285 30.9956C16.7242 31.049 17.1029 31.0651 20.135 31.0651C23.1672 31.0651 23.5558 31.0652 24.7416 30.9956C25.6693 30.9774 26.5872 30.8014 27.4559 30.4754C28.198 30.1874 28.872 29.748 29.4349 29.1851C29.9978 28.6222 30.4373 27.9482 30.7252 27.2061C31.0518 26.3369 31.2269 25.4205 31.2455 24.4905C31.2989 23.296 31.315 22.9173 31.315 19.8839C31.3125 16.8518 31.3125 16.4669 31.243 15.2786ZM20.1264 25.5807C16.9551 25.5807 14.3861 23.0117 14.3861 19.8405C14.3861 16.6693 16.9551 14.1003 20.1264 14.1003C21.6488 14.1003 23.1088 14.705 24.1853 15.7815C25.2618 16.858 25.8666 18.3181 25.8666 19.8405C25.8666 21.3629 25.2618 22.8229 24.1853 23.8994C23.1088 24.9759 21.6488 25.5807 20.1264 25.5807ZM26.095 15.2265C25.9192 15.2266 25.7451 15.1921 25.5826 15.1249C25.4202 15.0577 25.2725 14.9591 25.1482 14.8348C25.0239 14.7104 24.9253 14.5628 24.8581 14.4004C24.7909 14.2379 24.7564 14.0638 24.7565 13.8879C24.7565 13.7122 24.7911 13.5383 24.8584 13.3759C24.9256 13.2136 25.0242 13.0661 25.1484 12.9419C25.2726 12.8177 25.4201 12.7191 25.5824 12.6519C25.7448 12.5846 25.9187 12.55 26.0944 12.55C26.2701 12.55 26.4441 12.5846 26.6064 12.6519C26.7687 12.7191 26.9162 12.8177 27.0405 12.9419C27.1647 13.0661 27.2632 13.2136 27.3305 13.3759C27.3977 13.5383 27.4323 13.7122 27.4323 13.8879C27.4323 14.628 26.8338 15.2265 26.095 15.2265Z"
+          fill="white" />
+        <path
+          d="M20.1262 23.5688C22.1855 23.5688 23.8549 21.8994 23.8549 19.8401C23.8549 17.7807 22.1855 16.1113 20.1262 16.1113C18.0669 16.1113 16.3975 17.7807 16.3975 19.8401C16.3975 21.8994 18.0669 23.5688 20.1262 23.5688Z"
+          fill="white" />
+      </svg>
+        </a>
+    </div>
+
+    <!-- nav overlay section starts...-->
+    <div>
+        <div id="overlay_showing_navbar" class="fixed top-0 z-30 w-0 min-h-screen duration-500 bg-light-green">
+            <button onclick="onclickCloseNav()" class="absolute sm:right-14 sm:top-10 top-5 right-5">
+        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="5" width="7" height="47.4498" rx="3.5" transform="rotate(-45 0 5)" fill="white" />
+          <rect x="34" width="7" height="47.3805" rx="3.5" transform="rotate(45 34 0)" fill="white" />
+        </svg>
+      </button>
+            <div id="overlay_navbar_item" class="items-center justify-center hidden h-screen">
+                <ul class="w-full text-center">
+                    <li data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="0" class="py-3">
+                        <a class="text-2xl text-white sm:text-3xl" onclick="removeOverflow()" href="#home">
+              Home
+            </a>
+                    </li>
+                    <li class="py-3">
+                        <a class="text-2xl text-white sm:text-3xl" onclick="removeOverflow()" href="#about">
+              About
+            </a>
+                    </li>
+                    <li class="py-3">
+                        <a class="text-2xl text-white sm:text-3xl" onclick="removeOverflow()" href="#gallery">
+              Gallery
+            </a>
+                    </li>
+                    <li class="py-3">
+                        <a class="text-2xl text-white sm:text-3xl" onclick="removeOverflow()" href="#minting">
+              Mint
+            </a>
+                    </li>
+                    <li class="py-3">
+                        <a class="text-2xl text-white sm:text-3xl" onclick="removeOverflow()" href="#team">
+              Team
+            </a>
+
+
+                        <li class="py-3">
+                            <a class="text-2xl text-white sm:text-3xl" onclick="removeOverflow()" href="#faq">
+              FAQ
+            </a>
+                        </li>
+                        <li class="py-3">
+                            <a class="text-2xl text-white sm:text-3xl" onclick="removeOverflow()" href="#roadmap">
+              Roadmap
+            </a>
+                        </li>
+                        <li class="py-3">
+                            <div class="sm:hidden">
+                                <button id="wallet-connect-mobile" class="px-4 py-2 text-lg text-white rounded-full connect-wallet bg-pinkk ff-comic hover:bg-transparent whitespace-nowrap">
+                connect Wallet
+              </button>
+
+                                <div id="wallet-address-mobile" class="flex justify-center hidden px-2 py-1 my-2 text-lg text-white rounded-2xl bg-pinkk item-center whitespace-nowrap">
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- nav overlay section ends here... -->
+    <!-- HERO-SECTION -->
+    <section class="relative hero-section" id="home">
+
+        <div>
+            <div class="bg-img">
+                <img class="object-cover w-full img-1" src="img/hero-bg.png" alt="hero-img" />
+                <img class="relative z-10 w-full -mt-20 xl:-mt-28 2xl:-mt-32" src="img/hero-curve.png" alt="" />
+            </div>
+
+
+
+        </div>
+    </section>
+    <!-- ABOUT-SECTION -->
+    <section class="relative py-10 mb-10 overflow-hidden bg-gradient" id="about">
+        <div class="container mx-auto">
+            <!-- <img class="w-full" src="./img/about-bg.png " alt="about" /> -->
+            <div class="bg-center bg-no-repeat bg-cover bg-about lg:bg-contain sm:py-10">
+                <div class="flex flex-col px-3 py-20 lg:flex-row sm:px-20 lg:px-10 xl:px-20" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="flex flex-col justify-center w-full px-10" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">
+                        <img class="w-full" src="img/about-img.png" alt="about" />
+                    </div>
+                    <div class="flex flex-col justify-center w-full pl-5" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400">
+                        <h2 class="my-3 text-4xl text-white lg:text-xss ff-comic xl:pb-5">
+                            About
+                        </h2>
+                        <p class="text-sm text-white sm:text-lg">
+                            Nyukia is a metaverse dedicated to the principles of sustainability. The “Nyukiaverse” is inspired by the inner workings of bees(Nyuki). The bee is a symbol of gentle and aggressive strength, a global icon for sustainable activities, biodiversity conservation,
+                            economical efficiency, and ecological integrity. </p>
+                        <p class="mt-4 text-sm text-white sm:text-lg">
+                            The HaPeeBees are an endearing collection of non-fungible tokens with built-in programmable location-specific incentives), optimized to favour places with a higher solar reliability index, a property found only on the Whive Protocol and Blockchain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY-SECTION -->
+    <section class="py-10" id="gallery">
+        <h2 class="my-5 text-4xl text-center text-white lg:text-xss ff-comic sm:my-8" data-aos="zoom-in" data-aos-duration="2000">
+            GALLERY
+        </h2>
+        <!-- SLIDER  -->
+        <div class="pt-5 gallery-slider-1">
+            <div class="px-2 transition-all cursor-pointer hover:scale-105">
+                <img class="w-full py-4" src="img/team-1.png" alt=" " />
+            </div>
+            <div class="px-2 transition-all cursor-pointer hover:scale-105">
+                <img class="w-full py-4" src="img/team-2.png" alt=" " />
+            </div>
+            <div class="px-2 transition-all cursor-pointer hover:scale-105">
+                <img class="w-full py-4" src="img/team-3.png" alt=" " />
+            </div>
+            <div class="px-2 transition-all cursor-pointer hover:scale-105">
+                <img class="w-full py-4" src="img/team-2.png" alt=" " />
+            </div>
+            <div class="px-2 transition-all cursor-pointer hover:scale-105">
+                <img class="w-full py-4" src="img/team-1.png" alt=" " />
+            </div>
+            <div class="px-2 transition-all cursor-pointer hover:scale-105">
+                <img class="w-full py-4" src="img/team-3.png" alt=" " />
+            </div>
+            <div class="px-2 transition-all cursor-pointer hover:scale-105">
+                <img class="w-full py-4" src="img/team-2.png" alt=" " />
+            </div>
+            <div class="px-2 transition-all cursor-pointer hover:scale-105">
+                <img class="w-full py-4" src="img/team-1.png" alt=" " />
+            </div>
+        </div>
+
+    </section>
+    <!-- Minting-SECTION -->
+    <section class="relative py-10 bg-top bg-no-repeat bg-cover bg-minting sm:py-20 lg:mt-20" id="minting">
+
+        <div class="container mx-auto">
+            <h2 class="relative mb-0 text-4xl text-center text-white lg:text-xss ff-comic" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300">
+                Minting
+            </h2>
+
+            <!-- Minting -->
+            <div class="grid grid-cols-1 gap-6 mt-10 lg:grid-cols-3 sm:grid-cols-2 lg:gap-10 lg:mt-20">
+                <div class="duration-500 ease-in-out hover:-translate-y-5">
+                    <div class="h-full max-w-xs mx-auto mt-4 md:max-w-full md:mx-0 group" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+                        <div class="h-full px-4 text-center text-white cursor-pointer game-card">
+                            <img class="w-full" src="img/team-2.png" alt="game-img-1" />
+                            <h4 class="pt-2 mt-3 mb-1 text-xl font-semibold">
+                                One NFT (4 Matic)
+                            </h4>
+                            <button id="mint-one" class="rounded-full mt-2 bg-pinkk ff-comic sm:text-xl text-lg2 hover:border py-2.5 group-hover:border group-hover:bg-pinkk-dark group-hover:text-white px-5 hover:scale-105 transition-all hover:bg-pinkk-dark">
+                MINT ONE
+              </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="duration-500 ease-in-out hover:-translate-y-5">
+                    <div class="h-full max-w-xs mx-auto mt-4 md:max-w-full md:mx-0 group" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+                        <img class="absolute right-0 z-10" src="data:image/png;base64,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"
+                            alt="best-seller" />
+                        <div class="h-full px-4 text-center text-white cursor-pointer game-card">
+                            <div class="minting-img-2">
+                                <img class="w-full" src="img/team-3.png" alt="game-img-1" />
+                            </div>
+                            <h4 class="pt-2 mt-3 mb-1 text-xl font-semibold">
+                                Pack of three (12 Matic)
+                            </h4>
+                            <button id="mint-three" class="rounded-full mt-2 bg-pinkk ff-comic sm:text-xl text-lg2 hover:border py-2.5 group-hover:border group-hover:bg-pinkk-dark group-hover:text-white px-5 hover:scale-105 transition-all hover:bg-pinkk-dark">
+                MINT THREE
+              </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto duration-500 ease-in-out sm:col-span-2 lg:col-span-1 lg:mx-0 hover:-translate-y-5">
+                    <div class="h-full max-w-xs mx-auto mt-4 md:max-w-full md:mx-0 group" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="700">
+                        <img class="absolute right-0 z-10" src="data:image/png;base64,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"
+                            alt="mega-pack" />
+                        <div class="h-full px-4 text-center text-white cursor-pointer game-card">
+                            <img class="w-full" src="img/team-1.png" alt="game-img-1" />
+                            <h4 class="pt-2 mt-3 mb-1 text-xl font-semibold">
+                                Pack of five (20 Matic)
+                            </h4>
+                            <button id="mint-five" class="rounded-full mt-2 bg-pinkk ff-comic sm:text-xl text-lg2 hover:border py-2.5 group-hover:border group-hover:bg-pinkk-dark group-hover:text-white px-5 hover:scale-105 transition-all hover:bg-pinkk-dark">
+                MINT FIVE
+              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto mt-20">
+            <div class="max-w-lg m-auto text-center game-card" data-aos="zoom-in" data-aos-duration="2000">
+                <span class="block text-white">Use the 3 Buttons above to Mint 1, 3 or 5 Nukiyaverse NFTs.</span>
+                <span class="block text-white">If you want more than 5… use the number counter below.</span>
+                <span class="block text-white"><br>There is a limit of 25 Nukiyaverse NFTs per wallet.</span>
+                <div class="flex max-w-[300px] sm:max-w-full mx-auto sm:mx-0 align-middle justify-center pt-4 sm:px-4 text-center">
+                    <div onclick="decrement()" class="justify-center inline-block px-4 py-5 mr-2 align-middle cursor-pointer bg-bluee sm:py-7 sm:px-6 sm:mr-4 rounded-2xl minus">
+                        <svg class="w-[5vw] sm:w-[22px]" width="22" height="11" viewBox="0 0 22 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1.5L22 0L20.5 11L1.5 9.5L0 1.5Z" fill="white" />
+            </svg>
+                    </div>
+
+                    <div class="flex items-center px-3 text-center bg-white rounded-2xl">
+                        <h2 class="px-2 text-3xl font-bold text-center text-bluee sm:text-5xl" id="counting"></h2>
+                    </div>
+
+                    <div onclick="increment()" class="inline-block px-4 py-5 ml-2 cursor-pointer bg-bluee rounded-2xl sm:py-6 sm:px-6 sm:ml-4 plus">
+                        <svg class="w-[5vw] sm:w-[22px]" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="7" width="9" height="23" fill="white" />
+              <rect y="16" width="9" height="23" transform="rotate(-90 0 16)" fill="white" />
+            </svg>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-3">
+                    <h4 class="pt-2 mt-3 mb-1 text-xl font-normal text-white">
+                        4 /Matic
+                    </h4>
+                </div>
+                <div class="flex justify-center mt-3">
+                    <button id="mint-many" class="rounded-full mt-2 bg-pinkk ff-comic sm:text-xl text-lg2 hover:border py-2.5 group-hover:border group-hover:bg-pinkk-dark group-hover:text-white px-5 hover:scale-105 transition-all hover:bg-pinkk-dark text-white">
+            MINT NOW
+          </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TEAM-SECTION -->
+    <section class="pt-8 pb-10 lg:py-20" id="team">
+        <div class="container mx-auto">
+            <h2 class="mb-0 text-4xl text-center text-white lg:text-xss ff-comic lg:pb-5" adta-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300">
+                TEAM
+            </h2>
+            <div class="grid grid-cols-1 gap-6 mt-10 lg:grid-cols-3 sm:grid-cols-2 lg:gap-10">
+                <div class="duration-500 ease-in-out hover:-translate-y-5">
+                    <div class="max-w-xs mx-auto mt-4 lg:max-w-full md:mx-0" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+                        <div class="px-4 text-center text-white transition-all cursor-pointer game-card hover:bg-white hover:text-black">
+                            <img class="w-full" src="img/team-1.png" alt=" " />
+                            <h4 class="mt-1 text-2xl font-semibold">Name</h4>
+                            <p class="text-sm font-normal sm:text-lg">Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="duration-500 ease-in-out hover:-translate-y-5">
+                    <div class="max-w-xs mx-auto mt-4 lg:max-w-full md:mx-0" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+                        <div class="px-4 text-center text-white transition-all cursor-pointer game-card hover:bg-white hover:text-black">
+                            <img class="w-full" src="img/team-2.png" alt=" " />
+                            <h4 class="mt-1 text-2xl font-semibold">Name</h4>
+                            <p class="text-sm font-normal sm:text-lg">Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="duration-500 ease-in-out hover:-translate-y-5">
+                    <div class="max-w-xs mx-auto mt-4 lg:max-w-full md:mx-0" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="700">
+                        <div class="px-4 text-center text-white transition-all cursor-pointer game-card hover:bg-white hover:text-black">
+                            <img class="w-full" src="img/team-3.png" alt=" " />
+                            <h4 class="mt-1 text-2xl font-semibold">Nmae</h4>
+                            <p class="text-sm font-normal sm:text-lg">
+                                Art Director
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- PARTNERS-SECTION -->
+    <section class="pb-32 overflow-x-hidden bg-top bg-no-repeat bg-cover bg-partner">
+
+        <div class="container mx-auto lg:pt-14" id="faq">
+            <h2 class="pt-10 text-4xl text-center text-white ff-comic lg:text-xss pb-14" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+                FAQ
+            </h2>
+            <div class="justify-center max-w-full mx-auto sm:max-w-2xl" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300">
+                <div class="my-4 text-white faq-custom-bg">
+                    <div class="flex items-center px-5 accordion">
+                        <button class="w-full py-4 font-semibold text-left">
+              What is Nukiyaverse?
+            </button>
+                        <div>
+                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L9.55615 8.44385C9.249 8.751 8.751 8.751 8.44385 8.44385L2 2" stroke="white"
+                  stroke-width="3" stroke-linecap="round" />
+              </svg>
+                        </div>
+                    </div>
+                    <div class="px-5 overflow-hidden panel max-h-0">
+                        <p class="pb-4">
+                            Nukiyaverse NFTs are a collection of 10,000 programmatically generative Honeybee with over 100+ different traits. Each character is stored as ERC721 tokens on the Polygon blockchain
+                        </p>
+                    </div>
+                </div>
+                <div class="my-4 text-white faq-custom-bg">
+                    <div class="flex items-center px-5 accordion">
+                        <button class="w-full py-4 font-semibold text-left">
+              When does Nukiyaverse Launch?
+            </button>
+                        <div>
+                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L9.55615 8.44385C9.249 8.751 8.751 8.751 8.44385 8.44385L2 2" stroke="white"
+                  stroke-width="3" stroke-linecap="round" />
+              </svg>
+                        </div>
+                    </div>
+                    <div class="px-5 overflow-hidden panel max-h-0">
+                        <p class="pb-4">
+                            Nukiyaverse NFT collection will officially launch on May 28, 2022.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-4 text-white faq-custom-bg">
+                    <div class="flex items-center px-5 accordion">
+                        <button class="w-full py-4 font-semibold text-left">
+              How many NFTs are in the Nukiyaverse Collection?
+            </button>
+                        <div>
+                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L9.55615 8.44385C9.249 8.751 8.751 8.751 8.44385 8.44385L2 2" stroke="white"
+                  stroke-width="3" stroke-linecap="round" />
+              </svg>
+                        </div>
+                    </div>
+                    <div class="px-5 overflow-hidden panel max-h-0">
+                        <p class="pb-4">
+                            Nukiyaverse will have 10,000 unique characters.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-4 text-white faq-custom-bg">
+                    <div class="flex items-center px-5 accordion">
+                        <button class="w-full py-4 font-semibold text-left">
+              Are the base characters different in each tribe?
+            </button>
+                        <div>
+                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L9.55615 8.44385C9.249 8.751 8.751 8.751 8.44385 8.44385L2 2" stroke="white"
+                  stroke-width="3" stroke-linecap="round" />
+              </svg>
+                        </div>
+                    </div>
+                    <div class="px-5 overflow-hidden panel max-h-0">
+                        <p class="pb-4">
+                            Yes. Each tribe has a unique base character hand-drawn by a different artist, and each tribe has unique traits.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="my-4 text-white faq-custom-bg">
+                    <div class="flex items-center px-5 accordion">
+                        <button class="w-full py-4 font-semibold text-left">
+              What will be the initial price?
+            </button>
+                        <div>
+                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L9.55615 8.44385C9.249 8.751 8.751 8.751 8.44385 8.44385L2 2" stroke="white"
+                  stroke-width="3" stroke-linecap="round" />
+              </svg>
+                        </div>
+                    </div>
+                    <div class="px-5 overflow-hidden panel max-h-0">
+                        <p class="pb-4">
+                            The initial price will be 4 Matic per NFT
+                        </p>
+                    </div>
+                </div>
+                <div class="my-4 text-white faq-custom-bg">
+                    <div class="flex items-center px-5 accordion">
+                        <button class="w-full py-4 font-semibold text-left">
+              Will there be any discounts for purchasing multiple HaPeeBee NFTs?
+            </button>
+                        <div>
+                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L9.55615 8.44385C9.249 8.751 8.751 8.751 8.44385 8.44385L2 2" stroke="white"
+                  stroke-width="3" stroke-linecap="round" />
+              </svg>
+                        </div>
+                    </div>
+                    <div class="px-5 overflow-hidden panel max-h-0">
+                        <p class="pb-4">
+                            Yes. There will be a limit to the number of HaPeeBee NFTs in a single purchase. We are building a community and want to keep it fair for everyone. When you mint an HPB NFT, you will have the choice of the following price options: 1 NFT / 3-Pack NFT /
+                            5-Pack NFT. There is a 25-NFT limit per wallet.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="my-4 text-white faq-custom-bg">
+                    <div class="flex items-center px-5 accordion">
+                        <button class="w-full py-4 font-semibold text-left">
+                            What are the benefits of the Nyukiaverse?
+            </button>
+                        <div>
+                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L9.55615 8.44385C9.249 8.751 8.751 8.751 8.44385 8.44385L2 2" stroke="white"
+                  stroke-width="3" stroke-linecap="round" />
+              </svg>
+                        </div>
+                    </div>
+                    <div class="px-5 overflow-hidden panel max-h-0">
+                        <p class="pb-4">
+                            The Nyukiaverse shall allow creatives from indigenous communities to co-create and mint their NFTs raising awareness and funding for sustainable projects within their communities.
+                        </p>
+                    </div>
+                </div>
+                <div class="my-4 text-white faq-custom-bg">
+                    <div class="flex items-center px-5 accordion">
+                        <button class="w-full py-4 font-semibold text-left">
+                            How can I participate in the Nyukiaverse?
+            </button>
+                        <div>
+                            <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L9.55615 8.44385C9.249 8.751 8.751 8.751 8.44385 8.44385L2 2" stroke="white"
+                  stroke-width="3" stroke-linecap="round" />
+              </svg>
+                        </div>
+                    </div>
+                    <div class="px-5 overflow-hidden panel max-h-0">
+                        <p class="pb-4">
+                            Get your Nyukia NFT and wait for the launch of the Nyukia platform in 2022.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- ROADMAP-SECTION -->
+    <section class="bg-top bg-no-repeat bg-cover bg-roadmap lg:pt-32">
+        <div class="container pt-10 mx-auto" id="roadmap">
+            <h2 class="text-4xl text-center text-white ff-comic lg:text-xss" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+                Roadmap
+            </h2>
+            <div class="relative grid grid-cols-5 pt-20 sm:pt-32 z-1">
+                <div data-aos="fade-right" data-aos-duration="2000" class="max-w-full col-start-2 pt-0 text-white cursor-pointer game-card custom-border lg:max-w-5xl lg:col-span-2 col-span-full lg:col-start-1">
+                    <div class="px-3 pb-2 text-left lg:text-right">
+                        <div class="text-right">
+                            <img class="lg:ml-auto" src=" img/fav.png" alt="checked-chackbox" />
+                        </div>
+                        <h4 class="pt-3 text-sm font-normal sm:text-lg">JANUARY 2022</h4>
+                        <p class="flex pt-2 text-lg font-semibold sm:text-xl lg:justify-end">
+                            <span class="pl-2">White-Glove Concierge Miner Onboarding for NFT Holder:</span>
+                        </p>
+                        <p class="flex text-lg font-semibold sm:text-xl lg:justify-end">
+                            <span class="pl-2">  This is a private Discord Membership Club for HaPeeBee NFT holders onto solar mining of coins by setting up a CPU based mining Node which uses the Whive protocol.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative mt-negative-10">
+
+
+                <div class="grid grid-cols-5 pb-5 lg:pb-0" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="max-w-5xl col-span-4 col-start-2 text-white cursor-pointer game-card custom-border lg:col-span-2 lg:col-start-4">
+                        <div class="px-3 py-2 text-left">
+                            <div class="text-right">
+                                <img class="mr-auto" src=" img/fav.png" alt="checked-chackbox" />
+                            </div>
+                            <h4 class="pt-3 text-sm font-normal sm:text-lg">Q3-2022</h4>
+                            <p class="flex pt-2 text-lg font-semibold sm:text-xl">
+                                <span class="pl-2">
+                                    Launch of Melanin Academy Course Platform:
+                </span>
+
+                            </p>
+                            <p class="flex text-lg font-semibold sm:text-xl lg:justify-end">
+                                <span class="pl-2">  NFT holders shall be provided with an interactive web-based curriculum and training platform for Crypto, Solar Mining and NFT creation at www.melanin.academy.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-5" data-aos="fade-down" data-aos-duration="2000">
+                    <div class="max-w-full col-start-2 text-white cursor-pointer game-card custom-border lg:max-w-5xl lg:col-span-2 col-span-full lg:col-start-1">
+                        <div class="px-3 py-2 text-left lg:text-right">
+                            <div class="text-right">
+                                <img class="lg:ml-auto" src=" img/fav.png" alt="checked-chackbox" />
+                            </div>
+                            <h4 class="pt-3 text-sm font-normal sm:text-lg">APRIL 2022</h4>
+                            <p class="flex pt-2 text-lg font-semibold sm:text-xl lg:justify-end">
+                                <span class="pl-2">
+                                    Launch of Sustainable World Initiative (SWI) Foundation:
+                </span>
+                            </p>
+                            <p class="flex pt-2 text-lg font-semibold sm:text-xl lg:justify-end">
+                                <span class="pl-2">
+                                    Five percent of the NFT proceeds will be donated to the Sustainable World Initiative (SWI) to fund Green projects run by Indigenous communities globally such as the Maasai in Kenya, Watch documentary here www.melanin.solar
+                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-5 py-5 lg:py-0" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="max-w-5xl col-span-4 col-start-2 text-white cursor-pointer game-card custom-border lg:col-span-2 lg:col-start-4">
+                        <div class="px-3 py-2 text-left">
+                            <div class="text-right">
+                                <img class="mr-auto" src="img/fav.png" alt="unchecked-chackbox" />
+                            </div>
+                            <h4 class="pt-3 text-sm font-normal uppercase sm:text-lg">
+                                Q1-2023
+                            </h4>
+                            <p class="flex pt-2 text-lg font-semibold sm:text-xl">
+                                <span class="pl-2">Launch of Melanin Smart-Miner and NFT based Discount Coupons:</span>
+                            </p>
+                            <p class="flex pt-2 text-lg font-semibold sm:text-xl">
+                                <span class="pl-2">
+                                    The HaPeeBee Collection Holders can use the NFTs as a Discount Coupon to access the Melanin.Solar Smart-Miner that shall enable them to mine $WHIVE rewards with sustainable energy resources such as Solar
+                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- FOOTER-SECTION -->
+        <div class="ft">
+            <div class=" ft items-center justify-center sm:flex sm:justify-between">
+                <div>
+                    <img class="mx-auto" src="img/footer-logo (1).png" alt="footer-logo" />
+                </div>
+                <div class="flex justify-center mt-5 sm:mt-0">
+                    <a target="_blank" class="px-2" href="https://twitter.com/nyukiaverse" title="Nyukiaverse NFT Twitter">
+                        <svg class="transition-all hover:scale-110" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="39.7333" height="39.7333" rx="19.8667" fill="#3A9AE8" />
+              <g clip-path="url(#clip0_165_4987)">
+                <path
+                  d="M34.3222 11.0976C33.2854 11.557 32.1716 11.8674 31.0007 12.0077C32.2089 11.2848 33.1127 10.147 33.5437 8.80668C32.4086 9.4809 31.1663 9.95547 29.8708 10.2098C28.9996 9.27959 27.8457 8.66305 26.5883 8.45588C25.3308 8.24871 24.0401 8.46248 22.9165 9.06402C21.793 9.66556 20.8995 10.6212 20.3747 11.7826C19.85 12.944 19.7233 14.2461 20.0145 15.4868C17.7145 15.3714 15.4645 14.7736 13.4106 13.7323C11.3566 12.6909 9.54453 11.2294 8.09198 9.44242C7.59531 10.2992 7.30973 11.2925 7.30973 12.3504C7.30918 13.3028 7.5437 14.2405 7.9925 15.0805C8.44129 15.9205 9.09048 16.6367 9.88246 17.1656C8.96397 17.1364 8.06575 16.8882 7.26255 16.4417V16.5162C7.26246 17.8519 7.72449 19.1465 8.57025 20.1803C9.41601 21.2142 10.5934 21.9236 11.9027 22.1881C11.0506 22.4187 10.1573 22.4527 9.29019 22.2875C9.65958 23.4368 10.3791 24.4418 11.3481 25.1618C12.317 25.8819 13.4869 26.2809 14.6939 26.303C12.645 27.9115 10.1145 28.784 7.50964 28.7801C7.04821 28.7803 6.58718 28.7533 6.12891 28.6994C8.77301 30.3995 11.8509 31.3017 14.9944 31.2982C25.6355 31.2982 31.4527 22.4849 31.4527 14.8412C31.4527 14.5928 31.4465 14.342 31.4353 14.0937C32.5668 13.2754 33.5436 12.2621 34.3197 11.1013L34.3222 11.0976Z"
+                  fill="white" />
+                c
+              </g>
+              <defs>
+                <clipPath id="clip0_165_4987">
+                  <rect width="29.8" height="29.8" fill="white" transform="translate(4.96582 4.9668)" />
+                </clipPath>
+              </defs>
+            </svg>
+                    </a>
+                    <a target="_blank" class="px-2" href="https://discord.com/channels/910907986900316230/940217771797667890" title="HaPeeBee NFT Discord">
+                        <svg class="transition-all hover:scale-110" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.633789" width="39.7333" height="39.7333" rx="19.8667" fill="#3A9AE8" />
+              <g clip-path="url(#clip0_165_4992)">
+                <path
+                  d="M30.8281 10.5442C28.9284 9.68743 26.892 9.05418 24.7626 8.69409C24.7436 8.69045 24.724 8.6928 24.7064 8.70081C24.6888 8.70882 24.6742 8.72209 24.6645 8.73879C24.4037 9.19697 24.1132 9.79421 23.9096 10.266C21.6511 9.9286 19.355 9.9286 17.0965 10.266C16.8697 9.74313 16.614 9.23325 16.3304 8.73879C16.3208 8.72188 16.3063 8.70831 16.2887 8.69988C16.2712 8.69145 16.2515 8.68856 16.2323 8.69161C14.1041 9.05169 12.0678 9.68494 10.1668 10.5429C10.1504 10.5498 10.1366 10.5615 10.1271 10.5765C6.26299 16.2571 5.20385 21.7974 5.72411 27.2682C5.72556 27.2816 5.72971 27.2945 5.73633 27.3063C5.74295 27.318 5.75189 27.3283 5.7626 27.3365C8.01795 28.9785 10.5335 30.2293 13.2039 31.0366C13.2225 31.0424 13.2424 31.0424 13.261 31.0366C13.2796 31.0308 13.2961 31.0196 13.3082 31.0044C13.8828 30.2359 14.3921 29.4205 14.8305 28.567C14.8366 28.5553 14.8401 28.5425 14.8408 28.5293C14.8415 28.5162 14.8393 28.503 14.8345 28.4908C14.8297 28.4785 14.8223 28.4675 14.8128 28.4583C14.8033 28.4492 14.792 28.4422 14.7796 28.4378C13.9775 28.1358 13.2003 27.7713 12.4552 27.3476C12.4418 27.34 12.4305 27.3292 12.4223 27.3161C12.4142 27.303 12.4094 27.2881 12.4084 27.2727C12.4074 27.2573 12.4103 27.2419 12.4167 27.2279C12.4231 27.2139 12.4329 27.2017 12.4452 27.1924C12.6017 27.077 12.7581 26.9565 12.9071 26.8361C12.9206 26.8253 12.9367 26.8184 12.9538 26.8162C12.9709 26.814 12.9883 26.8166 13.004 26.8237C17.88 29.014 23.1608 29.014 27.9797 26.8237C27.9955 26.8161 28.013 26.8132 28.0304 26.8152C28.0477 26.8172 28.0642 26.824 28.0778 26.8348C28.2268 26.9565 28.382 27.077 28.5397 27.1924C28.5522 27.2015 28.5621 27.2136 28.5688 27.2275C28.5754 27.2414 28.5785 27.2567 28.5777 27.272C28.577 27.2874 28.5725 27.3024 28.5645 27.3156C28.5566 27.3288 28.5455 27.3398 28.5323 27.3476C27.7898 27.7748 27.0174 28.1361 26.2066 28.4366C26.1942 28.4411 26.1828 28.4482 26.1734 28.4575C26.1639 28.4667 26.1565 28.4779 26.1517 28.4903C26.1469 28.5026 26.1447 28.5158 26.1454 28.529C26.1461 28.5423 26.1496 28.5552 26.1557 28.567C26.6027 29.42 27.1143 30.232 27.6768 31.0031C27.6885 31.0189 27.7048 31.0308 27.7234 31.037C27.7421 31.0432 27.7622 31.0435 27.7811 31.0379C30.4561 30.2328 32.9757 28.9814 35.2336 27.3365C35.2446 27.3288 35.2538 27.3188 35.2607 27.3072C35.2675 27.2957 35.2718 27.2828 35.2733 27.2694C35.8941 20.9444 34.2328 15.4488 30.8666 10.5789C30.8584 10.5631 30.8447 10.5508 30.8281 10.5442ZM15.5594 23.9368C14.0917 23.9368 12.8811 22.6094 12.8811 20.9816C12.8811 19.3526 14.0681 18.0265 15.5594 18.0265C17.0618 18.0265 18.2612 19.3637 18.2376 20.9816C18.2376 22.6107 17.0506 23.9368 15.5594 23.9368ZM25.4616 23.9368C23.9928 23.9368 22.7834 22.6094 22.7834 20.9816C22.7834 19.3526 23.9692 18.0265 25.4616 18.0265C26.9641 18.0265 28.1635 19.3637 28.1399 20.9816C28.1399 22.6107 26.9653 23.9368 25.4616 23.9368Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_165_4992">
+                  <rect width="29.8" height="29.8" fill="white" transform="translate(5.60059 4.9668)" />
+                </clipPath>
+              </defs>
+            </svg>
+                    </a>
+                    <a target="_blank" class="px-2" href="https://www.instagram.com/nyukiaverse" title="Nyukiaverse NFT Instagram">
+                        <svg class="transition-all hover:scale-110" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.266602" width="39.7333" height="39.7333" rx="19.8667" fill="#3A9AE8" />
+              <path
+                d="M31.243 15.2786C31.2305 14.3382 31.0544 13.4071 30.7227 12.5271C30.4351 11.7847 29.9958 11.1106 29.4329 10.5476C28.8699 9.98471 28.1958 9.54539 27.4534 9.25776C26.5847 8.93165 25.6669 8.75531 24.7391 8.73626C23.5447 8.68287 23.166 8.66797 20.1338 8.66797C17.1017 8.66797 16.713 8.66797 15.5272 8.73626C14.5999 8.75545 13.6825 8.93178 12.8142 9.25776C12.0717 9.54519 11.3975 9.98444 10.8345 10.5474C10.2715 11.1104 9.8323 11.7846 9.54487 12.5271C9.2181 13.3952 9.04215 14.3127 9.02461 15.2401C8.97122 16.4358 8.95508 16.8145 8.95508 19.8467C8.95508 22.8788 8.95508 23.2662 9.02461 24.4533C9.04324 25.382 9.21831 26.2984 9.54487 27.1688C9.83278 27.911 10.2724 28.585 10.8355 29.1477C11.3986 29.7105 12.073 30.1495 12.8154 30.4369C13.6814 30.7761 14.5989 30.965 15.5285 30.9956C16.7242 31.049 17.1029 31.0651 20.135 31.0651C23.1672 31.0651 23.5558 31.0652 24.7416 30.9956C25.6693 30.9774 26.5872 30.8014 27.4559 30.4754C28.198 30.1874 28.872 29.748 29.4349 29.1851C29.9978 28.6222 30.4373 27.9482 30.7252 27.2061C31.0518 26.3369 31.2269 25.4205 31.2455 24.4905C31.2989 23.296 31.315 22.9173 31.315 19.8839C31.3125 16.8518 31.3125 16.4669 31.243 15.2786ZM20.1264 25.5807C16.9551 25.5807 14.3861 23.0117 14.3861 19.8405C14.3861 16.6693 16.9551 14.1003 20.1264 14.1003C21.6488 14.1003 23.1088 14.705 24.1853 15.7815C25.2618 16.858 25.8666 18.3181 25.8666 19.8405C25.8666 21.3629 25.2618 22.8229 24.1853 23.8994C23.1088 24.9759 21.6488 25.5807 20.1264 25.5807ZM26.095 15.2265C25.9192 15.2266 25.7451 15.1921 25.5826 15.1249C25.4202 15.0577 25.2725 14.9591 25.1482 14.8348C25.0239 14.7104 24.9253 14.5628 24.8581 14.4004C24.7909 14.2379 24.7564 14.0638 24.7565 13.8879C24.7565 13.7122 24.7911 13.5383 24.8584 13.3759C24.9256 13.2136 25.0242 13.0661 25.1484 12.9419C25.2726 12.8177 25.4201 12.7191 25.5824 12.6519C25.7448 12.5846 25.9187 12.55 26.0944 12.55C26.2701 12.55 26.4441 12.5846 26.6064 12.6519C26.7687 12.7191 26.9162 12.8177 27.0405 12.9419C27.1647 13.0661 27.2632 13.2136 27.3305 13.3759C27.3977 13.5383 27.4323 13.7122 27.4323 13.8879C27.4323 14.628 26.8338 15.2265 26.095 15.2265Z"
+                fill="white" />
+              <path
+                d="M20.1262 23.5688C22.1855 23.5688 23.8549 21.8994 23.8549 19.8401C23.8549 17.7807 22.1855 16.1113 20.1262 16.1113C18.0669 16.1113 16.3975 17.7807 16.3975 19.8401C16.3975 21.8994 18.0669 23.5688 20.1262 23.5688Z"
+                fill="white" />
+            </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class=" ft py-10 mt-32 text-center text-white">
+            <small class="text-sm font-normal sm:text-lg">Copyright &copy; 2022 Nyukia . All Rights
+        Reserved</small>
+        </div>
+    </section>
+
+    <a href="#" class="fixed transition-all bottom-10 animate-bounce z-1 right-10" id="scroll" style="display: none"><span
+      class="d-flex h-100 justify-content-center align-items-center">
+      <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="25" cy="25" r="25" fill="#FE7FC0" />
+        <mask id="mask0_402_427" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="6" y="10" width="40"
+          height="31">
+          <rect x="6" y="10" width="40" height="30.4348" fill="#C4C4C4" />
+        </mask>
+        <g mask="url(#mask0_402_427)">
+          <path
+            d="M25.1304 10.8696L11.2174 24.7827H19.913V37.8261H30.3478V24.7827H39.0435L25.1304 10.8696ZM25.1304 63.0435C22.2609 63.0435 19.913 60.6088 19.913 57.5653V49.4783C19.913 46.4348 22.2609 44.0001 25.1304 44.0001C28 44.0001 30.3478 46.4348 30.3478 49.4783V57.5653C30.3478 60.6088 28 63.0435 25.1304 63.0435ZM25.1304 46.8696C23.6522 46.8696 22.5217 48.0001 22.5217 49.4783V57.5653C22.5217 58.9566 23.6522 60.174 25.1304 60.174C26.6087 60.174 27.7391 59.0435 27.7391 57.5653V49.4783C27.7391 48.0001 26.6087 46.8696 25.1304 46.8696V46.8696ZM16.4348 43.9131H6V46.5218H9.91304V63.0435H12.5217V46.5218H16.4348V43.9131ZM39.0435 43.9131H33.8261V63.0435H36.4348V54.9566H39.0435C41.913 54.9566 44.2609 52.5218 44.2609 49.4783C44.2609 46.3479 41.913 43.9131 39.0435 43.9131V43.9131ZM39.0435 52.0001H36.4348V46.8696H39.0435C40.5217 46.8696 41.6522 48.0001 41.6522 49.4783C41.6522 50.9566 40.5217 52.0001 39.0435 52.0001Z"
+            fill="white" />
+        </g>
+      </svg> </span></a>
+
+    <div class="fixed mx-auto mt-20" style="z-index:11; position: fixed; left: 50%; bottom: 20px; transform: translate(-50%, -50%); margin: 0 auth; width: 75%;">
+        <div id="status-placeholder" class="flex justify-center hidden w-full px-4 py-4 text-xl text-white item-center bg-pinkk">
+            status
+        </div>
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJR2YJ62RG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NJR2YJ62RG');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/web3@1.7.3/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/web3modal@1.9.6/dist/index.js"></script>
+    <script src="https://unpkg.com/@walletconnect/web3-provider@1.7.7/dist/umd/index.min.js"></script>
+    <script src="js/eb.0405202201.js?ver=0405202203"></script>
+
+    <script>
+        $(".partners-slider").slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            prevArrow: ".slick-prev-btn",
+            nextArrow: ".slick-next-btn",
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            }, {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            }, {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false,
+                },
+            }, ],
+        });
+    </script>
+    <script>
+        $(".gallery-slider-2").slick({
+            dots: false,
+            infinite: true,
+            arrows: false,
+            slidesToShow: 5.5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 6000,
+            rtl: true,
+            swipeToSlide: true,
+            pauseOnHover: false,
+            cssEase: "linear",
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            }, {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: false,
+                },
+            }, ],
+        });
+    </script>
+    <script>
+        $(".gallery-slider-1").slick({
+            dots: false,
+            infinite: true,
+            arrows: false,
+            slidesToShow: 5.5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 6000,
+            pauseOnHover: false,
+            cssEase: "linear",
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            }, {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: false,
+                },
+            }, ],
+        });
+    </script>
+    <script>
+        // Get all .faq-question
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("faq-active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <script>
+        //initialising a variable name data
+        var data = 6;
+
+        //printing default value of data that is 0 in h2 tag
+        document.getElementById("counting").innerText = data;
+
+        //creation of increment function
+        function increment() {
+            let currentValue = document.getElementById("counting").innerText;
+            if (Number(currentValue) < 25) {
+                data = data + 1;
+                document.getElementById("counting").innerText = data;
+            }
+        }
+        //creation of decrement function
+        function decrement() {
+            let currentValue = document.getElementById("counting").innerText;
+
+            document.getElementById("counting").innerText = data;
+            if (Number(currentValue) > 6) {
+                data = data - 1;
+                document.getElementById("counting").innerText = data;
+            }
+        }
+    </script>
+    <script>
+        var opennav = document.getElementById("overlay_showing_navbar");
+        var navbarItem = document.getElementById("overlay_navbar_item");
+
+        function onclickNavOpens() {
+            opennav.classList.remove("w-0");
+            opennav.classList.add("w-full");
+            navbarItem.classList.remove("hidden");
+            navbarItem.classList.add("flex");
+            document.body.classList.add("overflow-hidden");
+        }
+
+        function onclickCloseNav() {
+            opennav.classList.add("w-0");
+            opennav.classList.remove("w-full");
+            navbarItem.classList.add("hidden");
+            navbarItem.classList.remove("flex");
+            document.body.classList.remove("overflow-hidden");
+        }
+
+        function removeOverflow() {
+            opennav.classList.add("w-0");
+            opennav.classList.remove("w-full");
+            navbarItem.classList.add("hidden");
+            navbarItem.classList.remove("flex");
+            document.body.classList.remove("overflow-hidden");
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 150) {
+                    $("#scroll").fadeIn();
+                } else {
+                    $("#scroll").fadeOut();
+                }
+            });
+            $("#scroll").click(function() {
+                $("html, body").animate({
+                        scrollTop: 0,
+                    },
+                    100
+                );
+                return false;
+            });
+        });
+    </script>
+    <!-- AOS ANIMATION -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+</body>
+
+</html>
